@@ -34,7 +34,7 @@ We will implement the K-means clustering algorithm and apply it to compress an i
 
 [⋆] recoverData.m - Recovers the original data from the projection 
 
-[⋆] findClosestCentroids.m-Findclosestcentroids(usedinK-means) 
+[⋆] findClosestCentroids.m - Findclosestcentroids(usedinK-means) 
 
 [⋆] computeCentroids.m - Compute centroid means (used in K-means) 
 
