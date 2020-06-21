@@ -24,17 +24,10 @@ centroids = zeros(K, n);
 %               centroid i.
 %
 % Note: You can use a for-loop over the centroids to compute this.
-%
 
-
-
-
-
-
-
-
-% =============================================================
-
+for i = length(size(X))
+   u = 1/c .* sum(X.^i);
+end
 
 end
 
