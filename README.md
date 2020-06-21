@@ -53,7 +53,7 @@ The K-means algorithm is a method to automatically cluster similar data examples
 
 #### Part 1.1.1: Finding closest centroids
 ```
-% Load an example dataset that we will be using
+% Load an example dataset
 load('ex7data2.mat');
 ```
 
@@ -66,7 +66,7 @@ function idx = findClosestCentroids(X, centroids)
 % Set K
 K = size(centroids, 1);
 
-% You need to return the following variables correctly.
+% return the following variables correctly.
 idx = zeros(size(X,1), 1);
 
 for i = 1:size(X,1)
