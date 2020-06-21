@@ -19,15 +19,12 @@ idx = zeros(size(X,1), 1);
 %               range 1..K
 %
 % Note: You can use a for-loop over the examples to compute this.
-%
 
+for i = 1:size(X,1)
+   temp = (X(i,:) - centroids);
+   [a idx(i)] = min(sum((temp) .* (temp),2));
+end
 
-
-
-
-
-
-% =============================================================
 
 end
 
