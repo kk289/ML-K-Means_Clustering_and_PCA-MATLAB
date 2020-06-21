@@ -15,8 +15,8 @@ We will implement the K-means clustering algorithm and apply it to compress an i
 - ex7faces.mat
 
 ### Files included in this repo
-- ex7.m - Octave/MATLAB script for the first exercise on K-means 
-- ex7_pca.m - Octave/MATLAB script for the second exercise on PCA 
+- ex7.m - Octave/MATLAB script for the K-means clustering 
+- ex7_pca.m - Octave/MATLAB script for PCA 
 - ex7data1.mat - Example Dataset for PCA
 - ex7data2.mat - Example Dataset for K-means
 - ex7faces.mat - Faces Dataset
