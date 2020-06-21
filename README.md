@@ -79,7 +79,12 @@ end
 Result: 
 Closest centroids for the first 3 examples: 1 3 2
 
+#### Part 1.1.2: Computing centroid means
 
+##### computeCentroids.m
+```
+*Update soon
+```
 
 ## Course Links 
 
