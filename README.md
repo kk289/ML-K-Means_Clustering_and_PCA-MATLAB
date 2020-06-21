@@ -41,8 +41,45 @@ We will implement the K-means clustering algorithm and apply it to compress an i
 [⋆] kMeansInitCentroids.m - Initialization for K-means centroids
 
 ## K-mean Clustering
+We will implement the K-means algorithm and use it for image compression. We will first start on an example 2D dataset that help to gain an intuition of how k-menas algorithm works. After that, we wil use the K-means algorithm for image compression by reducing the number of colors that occur in an image to only those that are most common in that image.
 
-* Will update soon.
+we will use following script for this part:
+```
+ex7.m
+```
+
+### Part 1.1: Implementing K-means
+The K-means algorithm is a method to automatically cluster similar data examples together. Concretely, we are given a training set {x^(1),...,x^(m)} (where x^(i) ∈ R^n), and want to group the data into a few cohesive “clusters”.
+
+#### Part 1.1.1: Finding closest centroids
+```
+% Load an example dataset that we will be using
+load('ex7data2.mat');
+```
+
+##### findClosestCentroids.m
+This function takes the data matrix X and the locations of all centroids inside centroids and should output a one-dimensional array idx that holds the index (a value in {1,...,K}, where K is total number of centroids) of the closest centroid to every training example. We can implement this using a loop over every training example and every centroid.
+
+```
+function idx = findClosestCentroids(X, centroids)
+
+% Set K
+K = size(centroids, 1);
+
+% You need to return the following variables correctly.
+idx = zeros(size(X,1), 1);
+
+for i = 1:size(X,1)
+   temp = (X(i,:) - centroids);
+   [a idx(i)] = min(sum((temp) .* (temp),2));
+end
+end
+```
+
+Result: 
+Closest centroids for the first 3 examples: 1 3 2
+
+
 
 ## Course Links 
 
