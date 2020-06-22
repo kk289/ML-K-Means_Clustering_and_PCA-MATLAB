@@ -261,6 +261,16 @@ We will run PCA on face images to see how it can be used in practice for dimensi
 ![face](Figure/face.jpg)
 - Figure: Faces dataset
 
+#### Part 2.4.1: PCA on Faces
+Same here, to run PCA on face dataset, we first normalize the dataset by subtracting the mean of each feature from the data matrix X. We run *ex7_pca.m* for PCA. 
+
+![face](Figure/face-2.jpg)
+- Figure: Principle components on the face dataset
+
+![face](Figure/face-3.jpg)
+- Figure: Original images of faces and ones reconstructed from only the top 100 Principle components
+
+
 
 
 ## Course Links 
