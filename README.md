@@ -111,13 +111,10 @@ Result:
 
 Computing centroids means
 
-Centroids computed after initial finding of closest centroids: 
-
- 2.428301 3.157924 
- 
- 5.813503 2.633656 
- 
- 7.119387 3.616684 
+Centroids computed after initial finding of closest centroids:  
+[2.428301 3.157924]   
+[5.813503 2.633656]   
+[7.119387 3.616684]   
 
 
 ## Course Links 
