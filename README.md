@@ -178,7 +178,7 @@ We can supply our own example image. If our image is very large, then K-means ca
 ![image1](Figure/parrot_result.jpg)
 - Figure: Original image and reconstructed image after k-means Image compression
 
-![image1](Figure/parrot_result.jpg)
+![image1](Figure/parrot_40.jpg)
 - Figure: Original image and reconstructed image (K = 40 and Iteration = 600)
 
 
