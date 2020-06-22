@@ -267,9 +267,19 @@ Same here, to run PCA on face dataset, we first normalize the dataset by subtrac
 ![face](Figure/face-2.jpg)
 - Figure: Principle components on the face dataset
 
+To understand what is lost in the dimension reduction, we can recover the data using only the projected dataset. In ex7 pca.m, an approximate recovery of the data is performed and the original and projected face images are displayed side by side (below figure).
+
 ![face](Figure/face-3.png)
 - Figure: Original images of faces and ones reconstructed from only the top 100 Principle components
 
+From the reconstruction, we can observe that the general structure and appearance of the face are kept while the fine details are lost. This is a remarkable reduction (more than 10×) in the dataset size that can help speed up your learning algorithm significantly. For example, if we were training a neural network to perform person recognition (gven a face image, predict the identitfy of the person), we can use the dimension reduced input of only a 100 dimensions instead of the original pixels.
+
+### Part 2.5: PCA for visualization
+
+Visualize the final pixel assignments in 3D space using the scatter3 function. 
+
+![3d](Figure/PCA-3D.jpg)
+- Original dataset in 3D
 
 
 
