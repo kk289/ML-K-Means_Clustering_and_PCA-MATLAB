@@ -114,7 +114,7 @@ Centroids means computed after initial finding of closest centroids:
 [5.813503 2.633656]   
 [7.119387 3.616684]   
 
-#### Part 1.2: K-means on example dataset
+### Part 1.2: K-means on example dataset
 After we completed two functions (findClosestCentroids and computeCentroids) which help to find closest centroids and compute means, now we can run the k-algorithm on a toy 2D dataset to see how k-means works.
 
 We set K = 3 and max iterations to 10. Let's take a look into each iteration to see how each step of the K-means algorithm changes the centroids and cluster assignments: 
@@ -130,6 +130,44 @@ We set K = 3 and max iterations to 10. Let's take a look into each iteration to 
 ![kmean](Figure/kmean9.jpg)  
 ![kmean](Figure/kmean10.jpg)  
 - Figure: K-means clustering: Centroids and cluster
+
+### Part 1.4: Random initialization
+Here, a good strategy for initializing the centroids is to set random examples from the training set. 
+
+We use kMeansInitCentroids.m function which randomly permutes the indices of the example using randperm. Then, it selects the first K examples based on the random permutation of the indices. This allows the examples to be selected at random without the risk of selecting the same example twice.
+
+##### kMeansInitCentroids.m
+```
+function centroids = kMeansInitCentroids(X, K)
+
+% return this values correctly
+centroids = zeros(K, size(X, 2));
+
+% Initialize the centroids to be random examples
+% Randomly reorder the indices of examples
+randidx = randperm(size(X, 1));
+
+% Take the first K examples as centroids
+centroids = X(randidx(1:K), :);
+
+end
+```
+
+### Part 1.4: Image compression with K-means
+We will use the K-means algorithm to select the 16 colors that will be used to represent the compressed image. We treat every pixel in the original image as a data example and use the k-means algorithm to the find the 16 colors that best group (cluster) the pixels in the 3-dimensional RGB space. Once we computed the cluster centroids on the image, we will then use the 16 colors to replace the pixels in the original image.
+
+```
+%  Load an image of a bird
+A = double(imread('bird_small.png'));
+```
+
+![original image](Figure/nobird.jpg)
+- Figure: Original image of bird
+
+![image](Figure/bird.jpg)
+- Figure: Reconstructed image after applying K-means to compress the image
+
+We can view the effects of the compression by reconstructing the image based only on the centroid assignments. Specifically, we can replace each pixel location with the mean of the centroid assigned to it.
 
 
 
