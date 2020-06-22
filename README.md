@@ -119,35 +119,17 @@ After we completed two functions (findClosestCentroids and computeCentroids) whi
 
 We set K = 3 and max iterations to 10. Let's take a look into each iteration to see how each step of the K-means algorithm changes the centroids and cluster assignments: 
 
-![kmean](Figure/kmean1.jpg)
-- Figure: K-means clustering: Iteration number 1  
-
-![kmean](Figure/kmean2.jpg)
-- Figure: K-means clustering: Iteration number 2  
-
-![kmean](Figure/kmean3.jpg)
-- Figure: K-means clustering: Iteration number 3  
-
-![kmean](Figure/kmean4.jpg)
-- Figure: K-means clustering: Iteration number 4  
-
-![kmean](Figure/kmean5.jpg)
-- Figure: K-means clustering: Iteration number 5  
-
-![kmean](Figure/kmean6.jpg)
-- Figure: K-means clustering: Iteration number 6  
-
-![kmean](Figure/kmean7.jpg)
-- Figure: K-means clustering: Iteration number 7  
-
-![kmean](Figure/kmean8.jpg)
-- Figure: K-means clustering: Iteration number 8  
-
-![kmean](Figure/kmean9.jpg)
-- Figure: K-means clustering: Iteration number 9  
-
-![kmean](Figure/kmean10.jpg)
-- Figure: K-means clustering: Iteration number 10 (DONE)  
+![kmean](Figure/kmean1.jpg) 
+![kmean](Figure/kmean2.jpg)  
+![kmean](Figure/kmean3.jpg)  
+![kmean](Figure/kmean4.jpg) 
+![kmean](Figure/kmean5.jpg) 
+![kmean](Figure/kmean6.jpg)  
+![kmean](Figure/kmean7.jpg) 
+![kmean](Figure/kmean8.jpg) 
+![kmean](Figure/kmean9.jpg)  
+![kmean](Figure/kmean10.jpg)  
+- Figure: K-means clustering: Centroids and cluster
 
 
 
