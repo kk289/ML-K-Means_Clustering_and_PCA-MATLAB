@@ -83,8 +83,42 @@ Closest centroids for the first 3 examples: 1 3 2
 
 ##### computeCentroids.m
 ```
-*Update soon
+function centroids = computeCentroids(X, idx, K)
+
+% Useful variables
+[m n] = size(X);
+
+% to return the following variables correctly.
+centroids = zeros(K, n);
+
+% for loop to compute centroid means
+for k = 1:K
+  count = 0;
+  sum = zeros(n, 1);
+  for i = 1:m
+    if (idx(i) == k)
+      sum = sum + X(i, :)';
+      count = count+1;
+    end
+  end
+  centroids(k, :) = (sum/count)';
+end
+
+end
 ```
+
+Result: 
+
+Computing centroids means
+
+Centroids computed after initial finding of closest centroids: 
+
+ 2.428301 3.157924 
+ 
+ 5.813503 2.633656 
+ 
+ 7.119387 3.616684 
+
 
 ## Course Links 
 
