@@ -255,6 +255,13 @@ After completing both projectData and recoverData, ex7 pca.m will now perform bo
 
 In figure, the original data points are indicated with the blue circles, while the projected data points are indicated with the red circles. The projection effectively only retains the information in the direction given by U1.
 
+### Part 2.4: Face Image Dataset
+We will run PCA on face images to see how it can be used in practice for dimension reduction. The dataset *ex7faces.mat* contains a dataset X of face images, each 32 X 32 in grayscale. Each row of X corresponds to one face image (a row vector of length 1024). We will now load and visualize the first 100 of those face images.
+
+![face](Figure/face.jpg)
+- Figure: Faces dataset
+
+
 
 ## Course Links 
 
