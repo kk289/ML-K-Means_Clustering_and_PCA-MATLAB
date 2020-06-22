@@ -279,9 +279,12 @@ From the reconstruction, we can observe that the general structure and appearanc
 Visualize the final pixel assignments in 3D space using the scatter3 function. 
 
 ![3d](Figure/PCA-3D.jpg)
-- Original dataset in 3D
+- Figure: Original dataset in 3D
 
+PCA is often used to reduce the dimensionality of data for visualization purposes. Here, we implement PCA to the 3D dataset to reduce it to 2-dimensions and visualize the result in 2D scatter plot.
 
+![2d](Figure/PCA-2D.jpg)
+- Figure: 2D Visualization produced using PCA
 
 ## Course Links 
 
