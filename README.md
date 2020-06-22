@@ -194,6 +194,25 @@ Let's take a look at how PCA works, we start with a 2D dataset which has one dir
 ![pca](Figure/pca.jpg)
 - Figure: Example dataset 1
 
+### Part 2.2: Implementing PCA
+PCA consists of two computational steps: First, compute the covariance matrix of the data. Then, use MATLAB’s SVD function to compute the eigenvectors U1, U2,...,Un. These will correspond to the principal components of variation in the data.
+
+We better normalize the data before using PCA, we subtracting the mean value of each feature from the dataset, and scaling each dimension so that they are in the same range. For that we use *featureNormalize.m* function.
+
+Now we run PCA to compute the principle components.
+
+##### pca.m 
+```
+% computing the covariance matrix of the data
+sigma = (1/m) * (X' * X);
+[U,S,V] = svd(sigma);
+```
+
+Result: Top eigenvector: U(:,1) = [-0.707107 -0.707107]
+
+![pca2](Figure/pca_2.jpg)
+- Figure: Computed eigenvectors of the dataset
+
 
 
 ## Course Links 
