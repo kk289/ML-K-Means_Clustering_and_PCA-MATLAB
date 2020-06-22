@@ -109,12 +109,50 @@ end
 
 Result: 
 
-Computing centroids means
-
-Centroids computed after initial finding of closest centroids:  
+Centroids means computed after initial finding of closest centroids:  
 [2.428301 3.157924]   
 [5.813503 2.633656]   
 [7.119387 3.616684]   
+
+#### Part 1.2: K-means on example dataset
+After we completed two functions (findClosestCentroids and computeCentroids) which help to find closest centroids and compute means, now we can run the k-algorithm on a toy 2D dataset to see how k-means works.
+
+We set K = 3 and max iterations to 10. Let's take a look into each iteration to see how each step of the K-means algorithm changes the centroids and cluster assignments: 
+
+![kmean](Figure/kmean.fig)
+- Figure: K-means clustering: Iteration number 1  
+
+![kmean](Figure/kmean2.fig)
+- Figure: K-means clustering: Iteration number 2  
+
+![kmean](Figure/kmean3.fig)
+- Figure: K-means clustering: Iteration number 3  
+
+![kmean](Figure/kmean4.fig)
+- Figure: K-means clustering: Iteration number 4  
+
+![kmean](Figure/kmean5.fig)
+- Figure: K-means clustering: Iteration number 5  
+
+![kmean](Figure/kmean6.fig)
+- Figure: K-means clustering: Iteration number 6  
+
+![kmean](Figure/kmean7.fig)
+- Figure: K-means clustering: Iteration number 7  
+
+![kmean](Figure/kmean8.fig)
+- Figure: K-means clustering: Iteration number 8  
+
+![kmean](Figure/kmean9.fig)
+- Figure: K-means clustering: Iteration number 9  
+
+![kmean](Figure/kmean10.fig)
+- Figure: K-means clustering: Iteration number 10 (DONE)  
+
+
+
+
+
 
 
 ## Course Links 
