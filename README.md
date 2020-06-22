@@ -267,7 +267,7 @@ Same here, to run PCA on face dataset, we first normalize the dataset by subtrac
 ![face](Figure/face-2.jpg)
 - Figure: Principle components on the face dataset
 
-![face](Figure/face-3.jpg)
+![face](Figure/face-3.png)
 - Figure: Original images of faces and ones reconstructed from only the top 100 Principle components
 
 
