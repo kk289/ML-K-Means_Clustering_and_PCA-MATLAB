@@ -169,6 +169,9 @@ A = double(imread('bird_small.png'));
 
 We can view the effects of the compression by reconstructing the image based only on the centroid assignments. Specifically, we can replace each pixel location with the mean of the centroid assigned to it.
 
+### Part 1.5: Using different image
+We can supply our own example image. If our image is very large, then K-means can take a long time to run. So we better resize the image before running the code. We may need to modify K to see the effects on the compression.
+
 
 
 
