@@ -180,8 +180,17 @@ We can supply our own example image. If our image is very large, then K-means ca
 
 
 ## Principle Component Analysis
+We will use principal component analysis (PCA) to perform dimensionality reduction. We will first experiment with an example 2D dataset to get intuition on how PCA works, and then use it on a bigger dataset of 5000 face image dataset.
+```
+ex7_pca.m
+```
 
-*Update soon
+### Part 2.1: Example Dataset
+Let's take a look at how PCA works, we start with a 2D dataset which has one direction of large variation and one of smaller variation. We visualize what happens when we use PCA to reduce the data from 2D to 1D. In practice, we might want to reduce data from 256 to 50 dimensions, say; but using lower dimensional data in this example allows us to visualize the algorithms better.
+
+![pca](Figure/pca.jpg)
+- Figure: Example dataset 1
+
 
 
 ## Course Links 
