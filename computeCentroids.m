@@ -8,14 +8,12 @@ function centroids = computeCentroids(X, idx, K)
 %   example, and K, the number of centroids. You should return a matrix
 %   centroids, where each row of centroids is the mean of the data points
 %   assigned to it.
-%
 
 % Useful variables
 [m n] = size(X);
 
 % You need to return the following variables correctly.
 centroids = zeros(K, n);
-
 
 % ====================== YOUR CODE HERE ======================
 % Instructions: Go over every centroid and compute mean of all points that
@@ -25,8 +23,16 @@ centroids = zeros(K, n);
 %
 % Note: You can use a for-loop over the centroids to compute this.
 
-for i = length(size(X))
-   u = 1/c .* sum(X.^i);
+for k = 1:K
+  count = 0;
+  sum = zeros(n, 1);
+  for i = 1:m
+    if (idx(i) == k)
+      sum = sum + X(i, :)';
+      count = count+1;
+    end
+  end
+  centroids(k, :) = (sum/count)';
 end
 
 end
