@@ -213,6 +213,47 @@ Result: Top eigenvector: U(:,1) = [-0.707107 -0.707107]
 ![pca2](Figure/pca_2.jpg)
 - Figure: Computed eigenvectors of the dataset
 
+### Part 2.3: Dimensionality Reduction with PCA
+Now after computing the Principle components, we can use them to reduce the feature dimension of our dataset by projecting each example onto a lower dimensional space, x^(i) -> z^(i) (eg. projecting the data from 2D to 1D). We use the eigenvectors returned by PCA and project the example dataset into a 1-dimensional space.
+
+#### Part 2.3.1: Projecting the data onto the principle components
+Given dataset X, the principal components U, and the desired number of dimensions to reduce to K. We should project each example in X onto the top K components in U. Note that the top K components in U are given by the first K columns of U, that is U reduce = U(:, 1:K).
+
+##### projectData.m
+```
+% Projects a data set into a lower dimensional space
+function Z = projectData(X, U, K)
+
+Z = X * U(:,1:K);
+
+end
+````
+Result:   
+Dimension reduction on example dataset.   
+Projection of the first example: 1.481274   
+
+#### Part 2.3.2: Reconstructing an approximation of the data
+After projecting the data onto the lower dimensional space, we can approximately recover the data by projecting them back onto the original high dimensional space.
+
+##### recoverData.m
+```
+% Recovers the original data from the projection
+function X_rec = recoverData(Z, U, K)
+
+X_rec = Z * U(:, 1:K)'; 
+
+end
+```
+
+Result: Approximation of the first example: -1.047419 -1.047419   
+
+#### Part 2.3.3: Visualizing the projections
+After completing both projectData and recoverData, ex7 pca.m will now perform both the projection and approximate reconstruction to show how the projection affects the data.
+
+![projection](Figure/projection.jpg)
+- Figure: The normalized and projected data after PCA
+
+In figure, the original data points are indicated with the blue circles, while the projected data points are indicated with the red circles. The projection effectively only retains the information in the direction given by U1.
 
 
 ## Course Links 
